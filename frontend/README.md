@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+markdown
+# Hackathon Todo App Submission (Phase 4 & 5)
 
-## Getting Started
+This project is a comprehensive multi-phase hackathon application featuring a Next.js frontend, a FastAPI backend, and an integrated AI Agent.
 
-First, run the development server:
+## 🚀 Project Overview
+- **Phase 1-3:** Core Todo functionality and state management.
+- **Phase 4:** AI Agent integration with specialized logic and Dockerization.
+- **Phase 5:** Cloud-native architecture with Kubernetes (K8s) manifests and CI/CD readiness.
 
+## 🛠️ Tech Stack
+- **Frontend:** Next.js
+- **Backend:** Python (FastAPI / UV)
+- **AI Integration:** OpenAI API / LangChain
+- **Infrastructure:** Docker & Docker Compose
+- **Orchestration:** Kubernetes (K8s)
+
+## 🏗️ Architecture & Deployment
+The application is structured to run as a set of interconnected microservices:
+- **Frontend Service:** Handles the user interface.
+- **Backend Service:** Manages the API and business logic.
+- **AI Agent Service:** Specialized service for intelligent task handling.
+
+### How to Run (Local Docker)
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker-compose up --build
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Kubernetes (Phase 5)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Manifests are located in the `/k8s` directory for cloud-native deployment:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* `deployment.yaml`
+* `service.yaml`
+* `secrets.yaml` (Placeholders included for security)
 
-## Learn More
+## 📺 Demo Video
 
-To learn more about Next.js, take a look at the following resources:
+[Click here to watch the Phase 4 & 5 Demo Video](https://drive.google.com/file/d/15vr5FfYkBk8pMeokEO2WUffh6ybkfGSX/view?usp=drive_link)
+*(Due to cloud provider verification delays, a full functional demo is provided via video).*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Rabia Waheed**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
